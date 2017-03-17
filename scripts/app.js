@@ -5,6 +5,15 @@
                 enabled: true,
             requireBase: false
             });
+        $stateProvider
+            .state('landing', {
+                url: '/',
+                templateUrl: '/templates/landing.html'
+            })
+            .state('album', {
+                url: '/album.html',
+                templateUrl: '/templates/album.html'
+            });
     }
 angular
     .module('blocJams', ['ui.router']);
