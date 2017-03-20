@@ -1,5 +1,5 @@
-(function () {
-    function AlbumCtrl (Fixtures) {
+(function() {
+    function AlbumCtrl(Fixtures) {
         this.albumData = Fixtures.getAlbum();
     }
     
