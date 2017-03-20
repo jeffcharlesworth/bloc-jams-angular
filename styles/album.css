@@ -68,7 +68,6 @@
     display: inline-block;
     width: 28px;
     height: 28px;
-    padding-top: 7px;
 }
 .album-song-button:hover{
     cursor: pointer;
