@@ -68,7 +68,11 @@
         *@type number
         */
         SongPlayer.currentTime = null;
-        
+        /**
+        *@desc holds song volume
+        *@type number
+        */        
+        SongPlayer.volume = null;
         /**
         * @function SongPlayer.play
         * @desc checks if the current song is not playing, if true it sets the song and plays it, * otherwise plays song if it is paused
@@ -138,6 +142,15 @@
                 currentBuzzObject.setTime(time);
             }
         };
+        /**
+        * @function SongPlayer.setVolume
+        * @desc sets volume
+        * @param number
+        **/
+        SongPlayer.setVolume = function(volume) {
+            SongPlayer.volume = volume;
+            currentBuzzObject.setVolume(volume);
+        }
         
         return SongPlayer;
 
