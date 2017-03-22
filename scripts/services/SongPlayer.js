@@ -44,6 +44,7 @@
         * @param {object}
         **/
         var playSong = function(song) {
+            currentBuzzObject.setVolume(SongPlayer.volume);
             currentBuzzObject.play();
             song.playing = true;
         };
@@ -72,7 +73,7 @@
         *@desc holds song volume
         *@type number
         */        
-        SongPlayer.volume = null;
+        SongPlayer.volume = 80;
         /**
         * @function SongPlayer.play
         * @desc checks if the current song is not playing, if true it sets the song and plays it, * otherwise plays song if it is paused
@@ -88,7 +89,12 @@
                     playSong(song);
                 }
             }
+            SongPlayer.autoPlay();
         };
+        
+        SongPlayer.autoPlay = function() {
+            currentBuzzObject.bind("ended", SongPlayer.next);
+        }
         
         /**
         * @function SongPlayer.pause
@@ -100,6 +106,16 @@
             currentBuzzObject.pause();
             song.playing = false;
         };
+        
+        SongPlayer.mute = function(song) {
+            currentBuzzObject.mute();
+            SongPlayer.currentSong.mute = true;
+        }
+        
+        SongPlayer.unmute = function(song) {
+            currentBuzzObject.unmute();
+            SongPlayer.currentSong.mute = false;
+        }
         
         /**
         * @function SongPlayer.previous
@@ -118,6 +134,7 @@
                 setSong(song);
                 playSong(song);
             }
+            SongPlayer.autoPlay();
         };
         
         SongPlayer.next = function() {
@@ -135,6 +152,7 @@
                 setSong(song);
                 playSong(song);
             }
+            SongPlayer.autoPlay();
         };
         
         SongPlayer.setCurrentTime = function(time) {
