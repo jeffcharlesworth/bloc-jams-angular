@@ -7,17 +7,17 @@
             });
         $stateProvider
             .state('landing', {
-                url: '../',
+                url: 'bloc-jams-angular/',
                 controller: 'LandingCtrl as landing',
                 templateUrl: 'bloc-jams-angular/templates/landing.html'
             })
             .state('album', {
-                url: '../album.html',
+                url: 'bloc-jams-angular/album.html',
                 controller: 'AlbumCtrl as album',
                 templateUrl: 'bloc-jams-angular/templates/album.html'
             })
             .state('collection', {
-                url: '../collection.html',
+                url: 'bloc-jams-angular/collection.html',
                 controller: 'CollectionCtrl as collection',
                 templateUrl: 'bloc-jams-angular/templates/collection.html'
             });
