@@ -12,12 +12,12 @@
                 templateUrl: 'templates/landing.html'
             })
             .state('album', {
-                url: 'bloc-jams-angular/album.html',
+                url: 'album.html',
                 controller: 'AlbumCtrl as album',
                 templateUrl: 'templates/album.html'
             })
             .state('collection', {
-                url: 'bloc-jams-angular/collection.html',
+                url: 'collection.html',
                 controller: 'CollectionCtrl as collection',
                 templateUrl: 'templates/collection.html'
             });
