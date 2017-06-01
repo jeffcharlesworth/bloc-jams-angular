@@ -7,17 +7,17 @@
             });
         $stateProvider
             .state('landing', {
-                url: '/',
+                url: '../',
                 controller: 'LandingCtrl as landing',
                 templateUrl: '../templates/landing.html'
             })
             .state('album', {
-                url: '/album.html',
+                url: '../album.html',
                 controller: 'AlbumCtrl as album',
                 templateUrl: '../templates/album.html'
             })
             .state('collection', {
-                url: '/collection.html',
+                url: '../collection.html',
                 controller: 'CollectionCtrl as collection',
                 templateUrl: '../templates/collection.html'
             });
