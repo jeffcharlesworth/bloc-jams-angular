@@ -11,13 +11,13 @@
                 controller: 'LandingCtrl as landing',
                 templateUrl: 'templates/landing.html'
             })
-            .state('album', {
+            .state('bloc-jams-angular/album', {
                 url: 'album.html',
                 controller: 'AlbumCtrl as album',
                 templateUrl: 'templates/album.html'
             })
             .state('collection', {
-                url: 'collection.html',
+                url: 'bloc-jams-angular/collection.html',
                 controller: 'CollectionCtrl as collection',
                 templateUrl: 'templates/collection.html'
             });
