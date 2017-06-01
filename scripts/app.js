@@ -9,17 +9,17 @@
             .state('landing', {
                 url: 'bloc-jams-angular/',
                 controller: 'LandingCtrl as landing',
-                templateUrl: 'bloc-jams-angular/templates/landing.html'
+                templateUrl: 'templates/landing.html'
             })
             .state('album', {
                 url: 'bloc-jams-angular/album.html',
                 controller: 'AlbumCtrl as album',
-                templateUrl: 'bloc-jams-angular/templates/album.html'
+                templateUrl: 'templates/album.html'
             })
             .state('collection', {
                 url: 'bloc-jams-angular/collection.html',
                 controller: 'CollectionCtrl as collection',
-                templateUrl: 'bloc-jams-angular/templates/collection.html'
+                templateUrl: 'templates/collection.html'
             });
     }
 angular
