@@ -18,3 +18,7 @@ https://jeffcharlesworth.github.io/bloc-jams-angular/
   scripts/services/SongPlayer.js
 * Seek Bar
   scripts/directives/seekBar.js
+  
+## Credits
+Jeff Charlesworth
+Images provided by Bloc
